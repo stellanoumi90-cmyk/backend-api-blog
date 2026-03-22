@@ -398,7 +398,7 @@ Pour tester l'API, vous pouvez utiliser :
 
 Le code source complet est disponible sur GitHub :
 
-**URL** : `https://github.com/jesuis-karel/blog-api-backend`
+**URL** : `https://github.com/stellanoumi90-cmyk/backend-api-blog
 
 ## Auteur
 
