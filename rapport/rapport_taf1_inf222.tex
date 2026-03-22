@@ -1,1 +1,197 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{enumitem}
 
+\geometry{a4paper, left=2.5cm, right=2.5cm, top=3cm, bottom=3cm}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{blue},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={TAF1 INF222 - Rapport},
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{TAF1 - INF222 EC1}
+\lhead{Développement Backend}
+\rfoot{Page \thepage}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace{2cm}
+
+    {\LARGE \textbf{UNIVERSITÉ DE YAOUNDÉ 1}} \\
+    \vspace{0.5cm}
+    {\Large Faculté des Sciences} \\
+    \vspace{0.3cm}
+    {\large Département d'Informatique} \\
+
+    \vspace{3cm}
+
+    {\Huge \textbf{TAF 1}} \\
+    \vspace{0.5cm}
+    {\LARGE \textbf{INF222 - EC1}} \\
+    \vspace{0.3cm}
+    {\Large Développement Backend : Programmation Web} \\
+
+    \vspace{2cm}
+
+    {\Large \textbf{Apprentissage structuré avec CleeRoute}} \\
+    {\Large \textbf{et Développement d'une API Backend}} \\
+
+    \vspace{3cm}
+
+    \begin{flushleft}
+    \large
+    \textbf{Présenté par :} [ONDO Jean Karel] \\
+    \textbf{Matricule :} [22U2381] \\
+    \textbf{Filière :} [INFORMATIQUE] \\
+    \textbf{UE :} INF222 - Développement Backend \\
+    \end{flushleft}
+
+    \vfill
+
+    {\large Proposé par : Charles Njiosseu, PhD Student} \\
+    \vspace{0.5cm}
+    {\large Année Académique 2025-2026}
+
+\end{titlepage}
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+Ce rapport s'inscrit dans le cadre du TAF1 de l'unité d'enseignement INF222 EC1 (Développement Backend : Programmation Web). Il vise trois objectifs principaux :
+
+\begin{enumerate}
+    \item \textbf{Structurer l'apprentissage} : Utiliser la plateforme CleeRoute pour organiser et personnaliser mon parcours d'apprentissage en développement web backend.
+
+    \item \textbf{Développer l'esprit critique} : Analyser de manière approfondie les fonctionnalités, les avantages et les limites de la plateforme CleeRoute, tout en proposant des améliorations pertinentes.
+
+    \item \textbf{Produire un contenu technique} : Concevoir et développer une API Backend REST complète pour la gestion d'un blog, documentée avec Swagger, en appliquant les bonnes pratiques du développement web.
+\end{enumerate}
+
+Ce travail académique combine donc une dimension pratique (développement d'API) et une dimension réflexive (analyse critique d'un outil pédagogique). L'objectif est de démontrer ma capacité à utiliser des outils d'apprentissage modernes, à développer des solutions techniques robustes et à porter un regard critique sur les technologies utilisées.
+
+Le rapport est structuré en trois parties principales :
+\begin{itemize}
+    \item La \textbf{Partie 1} présente mon utilisation détaillée de la plateforme CleeRoute, étape par étape.
+    \item La \textbf{Partie 2} documente le développement complet de l'API Backend du blog.
+    \item La \textbf{Partie 3} propose une analyse critique approfondie de CleeRoute.
+\end{itemize}
+
+\newpage
+
+\section{Partie 1 : Utilisation de la Plateforme CleeRoute}
+
+CleeRoute (\url{https://www.cleeroute.com/fr}) est une plateforme d'apprentissage structuré et personnalisé qui permet aux étudiants de créer des parcours d'apprentissage adaptés à leurs besoins. Dans cette section, je détaille mon expérience d'utilisation de la plateforme à travers huit étapes clés.
+
+\subsection{Étape 1 : Création du compte avec validation de l'adresse email}
+
+\subsubsection{Description de l'étape}
+
+La création d'un compte sur CleeRoute constitue le point d'entrée sur la plateforme. J'ai accédé à la page d'accueil et cliqué sur le bouton "S'inscrire". Le formulaire d'inscription demande les informations suivantes :
+\begin{itemize}
+    \item Nom et prénom
+    \item Adresse email
+    \item Mot de passe (avec confirmation)
+    \item Acceptation des conditions d'utilisation
+\end{itemize}
+
+Après soumission du formulaire, un email de validation a été envoyé à mon adresse email. J'ai cliqué sur le lien de confirmation pour activer mon compte.
+
+\subsubsection{Objectif pédagogique}
+
+Cette étape vise à créer une identité numérique sur la plateforme et à sécuriser l'accès au compte par la validation de l'adresse email. Cela garantit que l'utilisateur est bien le propriétaire de l'adresse fournie.
+
+\subsubsection{Explication détaillée}
+
+Le processus d'inscription est simple et intuitif. L'interface est claire avec des champs bien identifiés. Le système affiche des messages d'erreur explicites en cas de mot de passe trop faible ou d'email déjà utilisé. La validation par email est une bonne pratique de sécurité qui empêche les inscriptions frauduleuses.
+
+\subsubsection{Simulation de capture d'écran}
+
+\textit{L'écran de création de compte affiche un formulaire centré avec un design moderne. Les champs de saisie sont bien espacés. Un indicateur de force du mot de passe est visible sous le champ correspondant. Un message informatif indique "Un email de validation vous sera envoyé". Après validation, une page de confirmation affiche "Votre compte a été activé avec succès".}
+
+\subsubsection{Analyse critique}
+
+\textbf{Points positifs :}
+\begin{itemize}
+    \item Interface utilisateur claire et intuitive
+    \item Validation par email pour la sécurité
+    \item Indicateur de force du mot de passe
+    \item Messages d'erreur explicites et utiles
+    \item Processus rapide (moins de 2 minutes)
+\end{itemize}
+
+\textbf{Points négatifs :}
+\begin{itemize}
+    \item Pas d'option pour se connecter avec des comptes tiers (Google, GitHub)
+    \item Le lien de validation email expire rapidement (à vérifier)
+    \item Absence d'authentification à deux facteurs
+\end{itemize}
+
+\textbf{Suggestions d'amélioration :}
+\begin{itemize}
+    \item Ajouter l'authentification via OAuth (Google, GitHub, Microsoft)
+    \item Implémenter l'authentification à deux facteurs (2FA)
+    \item Permettre de renvoyer l'email de validation facilement
+    \item Ajouter un aperçu de la plateforme avant l'inscription
+\end{itemize}
+
+\subsection{Étape 2 : Définition du niveau et de l'objectif}
+
+\subsubsection{Description de l'étape}
+
+Après la connexion, CleeRoute propose un questionnaire pour évaluer mon niveau actuel en développement web backend. Les questions portent sur :
+\begin{itemize}
+    \item Mes connaissances en programmation
+    \item Mon expérience avec les frameworks backend
+    \item Ma familiarité avec les bases de données
+    \item Mes objectifs d'apprentissage (professionnels, académiques, personnels)
+\end{itemize}
+
+J'ai sélectionné "Niveau intermédiaire" et défini mon objectif comme "Maîtriser le développement d'API REST avec Node.js".
+
+\subsubsection{Objectif pédagogique}
