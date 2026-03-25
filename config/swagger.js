@@ -8,8 +8,8 @@ const options = {
       version: '1.0.0',
       description: 'API Backend pour la gestion d\'un blog - TAF1 INF222 EC1 (Développement Backend)',
       contact: {
-        name: 'INF222 ONDO Jean Karel',
-        email: 'karel.ondo@facsciences-uy1.cm'
+        name: 'INF222 NOUMI DIPATEU ANGE STELLA',
+        email: 'stellanoumi90@gmail.com'
       },
       license: {
         name: 'MIT',
